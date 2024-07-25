@@ -37,7 +37,6 @@ def webhook_github():
     receive pushes from GitHub
     """
     log.info('got GitHub webhook')
-    print("heelo")
 
     if request.method == 'POST':
         """

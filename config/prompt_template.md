@@ -23,7 +23,7 @@
 ## Review Goals
 - **Correctness**: Verify that the changes are correctly implemented and do not introduce any new errors or issues.
 - **Security**: Check for any security issues.
-- **Concise Comment**: Only spot the issues, **DO NOT EXPLAIN WHY**.
+- **Comment Format**:
     - Flag can be [ERROR] or [WARNING], with security issues treated as [WARNING].
     - Issue descriptions need to be concise and short.
     - Print the first line of buggy code as inline code snippets.

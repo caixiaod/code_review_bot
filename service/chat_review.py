@@ -27,7 +27,7 @@ github_headers = {
 
 def get_current_time_string():
     # Generate the current time string in the desired format
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    current_time = datetime.now().strftime('%Y%m%d%H%M%S')
     return current_time
 
 def save2file(prompt_content, review_note, filename):
@@ -198,8 +198,9 @@ def review_pr_code(project_name, pr_id):
         # log.info(diff_content['diff'])
         prompt_content, review_note = generate_review_note(title, source_code, diff_content)
         current_time_str = get_current_time_string()
-        url_encoded_path = file_path.replace("/", "%2F").replace(".", "%2E")
-        md_filename = f"{current_time_str}_{project_name}_{pr_id}_{url_encoded_path}"
+        url_encoded_path = file_path.replace("/", "%2F")
+        project_name_encoded = project_name.replace("/", "%2F")
+        md_filename = f"{current_time_str}_{project_name_encoded}_{pr_id}_{url_encoded_path}"
         save2file(prompt_content, review_note, md_filename)
         # log.info(f'Review result for {file_path}: {review_note}')
         if review_note:

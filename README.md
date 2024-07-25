@@ -10,7 +10,13 @@ Automatic Trigger and Timely Response: Utilizing Webhook functionality, the syst
 
 ### 4、run app.py 
 
+**Run Service Foreground**
 ```python
-nohup python3 app.py & 
+python code_review_service.py
+```
+
+**Run Service Background**
+```shell
+sh restart_service.sh
 ```
 
