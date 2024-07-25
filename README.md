@@ -2,7 +2,7 @@
 
 ## Features
 
- **LLM integrates with GitLab/GitHub to achieve automated code auditing and provide efficient, intelligent code review solutions for software development teams**
+ **LLM integrates with GitHub to achieve automated code auditing and provide efficient, intelligent code review solutions for software development teams**
 
 Automatic Trigger and Timely Response: Utilizing Webhook functionality, the system automatically triggers merge request events.
 
