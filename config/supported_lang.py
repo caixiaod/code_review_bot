@@ -1,0 +1,17 @@
+supported_extension = {
+    '.bash': 'shell',
+    '.bat': 'shell',
+    '.c': 'c',
+    '.cc': 'cpp',
+    '.cmake': 'cmake',
+    '.cmd': 'shell',
+    '.cpp': 'cpp',
+    '.cs': 'csharp',
+    '.cxx': 'cpp',
+    '.h': 'c',
+    '.hpp': 'cpp',
+    '.js': 'javascript',
+    '.java': 'java',
+    '.py': 'python',
+    '.sh': 'shell',
+}
